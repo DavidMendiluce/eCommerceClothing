@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
 <head>
 <title>eCommerceClothing</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="public/style.css">
 </head>
 
 <body>
@@ -11,45 +11,337 @@
 
 <header id="home">
   <div class="menu"></div>
-  <div class="logo"></div>
+  <div class="logo">
+    <img src="img/logo1.png">
+    <div class="searcher">
+      <form action="source.html" method="get" id="searchform"/>
+        <input type="search" name="search" pattern="[A-Za-z0-9]+">
+    </div>
+    <ul>
+      <li id="user">
+        <img src="img/User.png">
+      </li>
+      <li id="heart">
+        <img src="img/heart.png">
+      </li>
+      <li id="cart">
+        <img src="img/cart.png">
+      </li>
+    </ul>
+  </div>
+
 
   <nav class="nav">
     <div class="overlay">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Face+Body</a></li>
-        <li><a href="#">Gifts</a></li>
+        <li><a>Home</a>
+          <ul class="subMenu">
+            <li>
+              <div class="row">
+                <div>
+                  <p>My Account</p>
+                </div>
+                <div>
+                  <p>My Orders</p>
+                </div>
+                <div>
+                  <p>Return Information</p>
+                </div>
+                <div>
+                  <p>Contact Preference</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><a>Sports</a>
+          <ul class="subMenu">
+            <li>
+              <div class="row">
+                <div>
+                  <p>Ski-Snowboard</p>
+                </div>
+                <div>
+                  <p>Gym</p>
+                </div>
+                <div>
+                  <p>Running</p>
+                </div>
+                <div>
+                  <p>Swim</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><a>Face+Body</a>
+          <ul class="subMenu">
+            <li>
+              <div class="row">
+                <div>
+                  <p>Body Care</p>
+                </div>
+                <div>
+                  <p>Skin Care</p>
+                </div>
+                <div>
+                  <p>Make Up</p>
+                </div>
+                <div>
+                  <p>Fragance</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><a>Gifts</a>
+          <ul class="subMenu">
+            <li>
+              <div class="row">
+                <div>
+                  <p>Cards</p>
+                </div>
+                <div>
+                  <p>Books</p>
+                </div>
+                <div>
+                  <p>Decoration</p>
+                </div>
+                <div>
+                  <p>Travel Gifts</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><a>Shop</a>
+          <ul class="subMenu">
+            <li>
+              <div class="row">
+                <div>
+                  <p>New In</p>
+                </div>
+                <div>
+                  <p>Clothing</p>
+                </div>
+                <div>
+                  <p>Accesories</p>
+                </div>
+                <div>
+                  <p>Shoes</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
 
 </header>
 
-<section class="offerAd"></section>
-<section class="newTrend"></section>
-<section class="boxAds"></section>
-<section class="styleIdeas"></section>
-<section class="tables"></section>
-<section class="categories"></section>
+<section class="offerAd">
+  <h1>Esto</h1>
+  <img src= "img/Ad.jpg">
 
+</section>
 
+<section class="newTrend">
+<h2>New Trend</h2>
+<img src="img/newTrend.jpeg">
+</section>
+
+<section class="boxAds">
+  <div class="boxAds">
+    <img src="img/boxAd1.jpg">
+    <img src="img/boxAd2.jpg">
+    <img src="img/boxAd3.jpg">
+   </div>
+</section>
+
+<section class="styleIdeas">
+  <h2>Style Ideas</h2>
+  <div class="styleGroup">
+    <div class="styleBox">
+      <img src="img/blog1.jpg">
+      <h3></h3>
+      <p></p>
+    </div>
+    <div class="styleBox">
+      <img src="img/blog2.jpg">
+      <h3></h3>
+      <p></p>
+    </div>
+    <div class="styleBox">
+      <img src="img/blog3.jpg">
+      <h3></h3>
+      <p></p>
+    </div>
+    <div class="styleBox">
+      <img src="img/blog4.jpg">
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+
+</section>
+
+<section class="tables">
+  <table>
+    <tr>
+      <th>On Sale</th>
+    </tr>
+    <tr>
+      <td>
+        <img src=img/table1.jpg>
+        <h4></h4>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src=img/table2.jpg>
+        <h4></h4>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src=img/table3.jpg>
+        <h4></h4>
+        <p></p>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>Featured</th>
+    </tr>
+  </tr>
+  <tr>
+    <td>
+      <img src=img/table4.jpg>
+      <h4></h4>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src=img/table5.jpg>
+      <h4></h4>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src=img/table6.jpg>
+      <h4></h4>
+      <p></p>
+    </td>
+  </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>Top Rated</th>
+    </tr>
+  </tr>
+  <tr>
+    <td>
+      <img src=img/table7.jpg>
+      <h4></h4>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="img/table8.jpg">
+      <h4></h4>
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="img/table9.jpg">
+      <h4></h4>
+      <p></p>
+    </td>
+  </tr>
+  </table>
+
+</section>
+
+<section class="categories">
+  <h2>Shop by Categories</h2>
+  <div class="slider">
+
+      <div class="styleBox">
+        <img src="img/dress.jpg">
+      </div>
+      <div class="styleBox">
+        <img src="img/swim.jpg">
+      </div>
+      <div class="styleBox">
+        <img src="img/shoes.jpg">
+      </div>
+      <div class="styleBox">
+        <img src="img/makeup.jpg">
+      </div>
+      <div class="styleBox">
+        <img src="img/wristband.jpg">
+      </div>
+
+  </div>
+
+</section>
 
 
 </body>
 
 
 <footer>
+  <h1>Help and Information</h1>
+  <ul class="help">
+    <li>Help</li>
+    <li>Order status</li>
+    <li>Return Information</li>
+    <li>Premium shipping</li>
+  </ul>
+  <h1>About Us</h1>
+  <ul class="AboutUs">
+    <li>About lush</li>
+    <li>Careers</li>
+    <li>Corporate Responsability</li>
+    <li>Investors Site</li>
+  </ul>
+  <h1>Menu</h1>
+  <ul class="menu">
+    <li>Contact</li>
+    <li>Lastest News</li>
+    <li>FAQ</li>
+    <li>Blog</li>
+  </ul>
+  <h1>Get in Touch</h1>
+  <ul class="getInTouch">
+    <li>Direction</li>
+    <li>Phone</li>
+    <li>Email</li>
+  </ul>
+
+  <div class="socialMedia">
+    <img src="img/facebook.png" width="30px" height="30px">
+    <img src="img/instagram.png" width="30px" height="30px">
+    <img src="img/twitter.png" width="30px" height="30px">
+   </div>
+
+  <div class="language">
+    <img>
+    <p>Hello, we belive you are in UK</p>
+  </div>
 
 </footer>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
-  <script type="text/javascript" src="public/main.js"></script>
+
 
 </html>
