@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <head>
 <title>eCommerceClothing</title>
 <link rel="stylesheet" href="public/style.css">
@@ -10,14 +10,19 @@
 
 
 <header id="home">
-  <div class="menu"></div>
+  <div class="menu">
+    <ul class="market">
+      <li>Marketplace</li>
+      <li>Help and info</li>
+    </ul>
+  </div>
   <div class="logo">
-    <img src="img/logo1.png">
+    <img src="img/logo2.png">
     <div class="searcher">
       <form action="source.html" method="get" id="searchform"/>
         <input type="search" name="search" pattern="[A-Za-z0-9]+">
     </div>
-    <ul>
+    <ul class="icons">
       <li id="user">
         <img src="img/User.png">
       </li>
@@ -32,126 +37,140 @@
 
 
   <nav class="nav">
-    <div class="overlay">
-      <ul>
-        <li><a>Home</a>
-          <ul class="subMenu">
-            <li>
-              <div class="row">
-                <div>
-                  <p>My Account</p>
-                </div>
-                <div>
-                  <p>My Orders</p>
-                </div>
-                <div>
-                  <p>Return Information</p>
-                </div>
-                <div>
-                  <p>Contact Preference</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li><a>Sports</a>
-          <ul class="subMenu">
-            <li>
-              <div class="row">
-                <div>
-                  <p>Ski-Snowboard</p>
-                </div>
-                <div>
-                  <p>Gym</p>
-                </div>
-                <div>
-                  <p>Running</p>
-                </div>
-                <div>
-                  <p>Swim</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li><a>Face+Body</a>
-          <ul class="subMenu">
-            <li>
-              <div class="row">
-                <div>
-                  <p>Body Care</p>
-                </div>
-                <div>
-                  <p>Skin Care</p>
-                </div>
-                <div>
-                  <p>Make Up</p>
-                </div>
-                <div>
-                  <p>Fragance</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li><a>Gifts</a>
-          <ul class="subMenu">
-            <li>
-              <div class="row">
-                <div>
-                  <p>Cards</p>
-                </div>
-                <div>
-                  <p>Books</p>
-                </div>
-                <div>
-                  <p>Decoration</p>
-                </div>
-                <div>
-                  <p>Travel Gifts</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+      <ul id="navBar">
+        <li id="homeMove"><a>Home</a>
         </li>
         <li><a>Shop</a>
-          <ul class="subMenu">
-            <li>
-              <div class="row">
-                <div>
-                  <p>New In</p>
-                </div>
-                <div>
-                  <p>Clothing</p>
-                </div>
-                <div>
-                  <p>Accesories</p>
-                </div>
-                <div>
-                  <p>Shoes</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+        </li>
+        <li><a id="face">Face+Body</a>
+        </li>
+        <li><a>Sports</a>
+        </li>
+        <li><a>Gifts</a>
+        </li>
+      </ul>
+   <div class="menuContainer">
+    <div class="homeMenu">
+      <ul class="subMenu">
+        <li>
+          <div class="row">
+            <div>
+              <p>Account</p>
+            </div>
+            <div>
+              <p>Orders</p>
+            </div>
+            <div>
+              <p>Return Information</p>
+            </div>
+            <div>
+              <p>Contact</p>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
+
+   <div class="shopMenu">
+    <ul class="subMenu">
+      <li>
+        <div class="row">
+          <div>
+            <p>New In</p>
+          </div>
+          <div>
+            <p>Clothing</p>
+          </div>
+          <div>
+            <p>Accesories</p>
+          </div>
+          <div>
+            <p>Shoes</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+<div class="SkinMenu">
+  <ul class="subMenu">
+    <li>
+      <div class="row">
+        <div>
+          <p>Body Care</p>
+        </div>
+        <div>
+          <p>Skin Care</p>
+        </div>
+        <div>
+          <p>Make Up</p>
+        </div>
+        <div>
+          <p>Fragance</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="sportsMenu">
+<ul class="subMenu">
+  <li>
+    <div class="row">
+      <div>
+        <p>Ski-Snowboard</p>
+      </div>
+      <div>
+        <p>Gym</p>
+      </div>
+      <div>
+        <p>Running</p>
+      </div>
+      <div>
+        <p>Swim</p>
+      </div>
+    </div>
+  </li>
+</ul>
+</div>
+
+<ul class="subMenu">
+  <li>
+    <div class="row">
+      <div>
+        <p>Cards</p>
+      </div>
+      <div>
+        <p>Books</p>
+      </div>
+      <div>
+        <p>Decoration</p>
+      </div>
+      <div>
+        <p>Travel Gifts</p>
+      </div>
+    </div>
+  </li>
+</ul>
+</div>
   </nav>
 
 </header>
 
+<section class="header">
+  </section
+
 <section class="offerAd">
-  <h1>Esto</h1>
-  <img src= "img/Ad.jpg">
+  <img src= "img/Ad2.jpg">
 
 </section>
 
 <section class="newTrend">
-<h2>New Trend</h2>
-<img src="img/newTrend.jpeg">
+<img src="img/newTrend1.jpg">
+<h2>NEW TREND</h2>
 </section>
 
-<section class="boxAds">
+<section class="ads">
   <div class="boxAds">
     <img src="img/boxAd1.jpg">
     <img src="img/boxAd2.jpg">
@@ -160,29 +179,31 @@
 </section>
 
 <section class="styleIdeas">
-  <h2>Style Ideas</h2>
+  <h2>STYLE IDEAS</h2>
+  <P>Blogs, fashion ideas, interviews and lifestyle</p>
   <div class="styleGroup">
     <div class="styleBox">
       <img src="img/blog1.jpg">
-      <h3></h3>
-      <p></p>
+      <h3>top 10 tips to be productive in the mornings</h3>
+      <p class="boxP1">13 March 2019</p>
     </div>
     <div class="styleBox">
       <img src="img/blog2.jpg">
-      <h3></h3>
-      <p></p>
+      <h3>Comfortable vs Stylish</h3>
+      <p class="boxP2">13 March 2019</p>
     </div>
     <div class="styleBox">
       <img src="img/blog3.jpg">
-      <h3></h3>
-      <p></p>
+      <h3>What is new with Gregori Viancci</h3>
+      <p class="boxP1">13 March 2019</p>
     </div>
     <div class="styleBox">
       <img src="img/blog4.jpg">
-      <h3></h3>
-      <p></p>
+      <h3>My trip to Greece</h3>
+      <p class="boxP2">13 March 2019</p>
     </div>
-  </div>
+    </div>
+
 
 </section>
 
