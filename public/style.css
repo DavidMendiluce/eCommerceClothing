@@ -38,8 +38,10 @@ header {
   border-bottom: 1px solid rgba(145, 145, 145, 0.5);
   height: 10vh;
   background-color: #6f6f6f;
+  position: relative;
 
 }
+
 
 .market {
   margin-left: 90%;
@@ -61,34 +63,34 @@ header {
 
 .homeMenu {
   margin-left: 41vh;
-  margin-top: 2vh;
+  margin-top: -1vh;
   display: none;
 }
 
 .shopMenu {
   margin-left: 63vh;
-  margin-top: 2vh;
+  margin-top: -1vh;
   display: none;
 }
 
 .sportsMenu {
   position: relative;
   left: 111.5vh;
-  top: 2vh;
+  margin-top: -1vh;
   display: none;
 }
 
 .skinMenu{
   position: relative;
   left: 85vh;
-  top: 2vh;
+  margin-top: -1vh;
   display: none;
 }
 
 .giftsMenu {
   position: relative;
   left: 134vh;
-  top: 2vh;
+  margin-top: -1vh;
   display: none;
 }
 
@@ -102,12 +104,22 @@ header {
 @media (max-width: 1280px) {
   .searcher {
     margin-left: 30vh;
-    margin-top: -26vh;
+    margin-top: -25.5vh;
     width: 120%;
+
   }
 }
 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .searcher {
+    margin-left: 10vh;
+    width: 100%;
+  }
+}
 
+.logoImg {
+  display: none;
+}
 
 input[type="search"] {
   border-radius: 15px;
@@ -128,8 +140,15 @@ input[type="search"] {
 
 @media (max-width: 1280px) {
   .icons {
-    margin-left: 148vh;
-    margin-top: -4vh;
+    margin-left: 180vh;
+    margin-top: -5vh;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .icons {
+    margin-left: 68%;
+    margin-top: -7%;
   }
 }
 
@@ -184,17 +203,76 @@ input[type="search"] {
     padding-left: 3vh;
     padding-right: 3vh;
   }
+
+  #heart img {
+    width: 30px;
+    height: 30px;
+
+  }
+  #cart img {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  #user img {
+    width: 30px;
+    height: 30px;
+
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+  #heart {
+    padding-left: 0vh;
+    padding-right: 0vh;
+  }
+  #cart {
+    padding-left: 0vh;
+    padding-right: 2vh;
+  }
+
+  #user {
+    padding-left: 2vh;
+    padding-right: 0vh;
+  }
+
+  #heart img {
+    width: 20px;
+    height: 20px;
+
+  }
+  #cart img {
+    width: 20px;
+    height: 20px;
+
+  }
+
+  #user img {
+    width: 20px;
+    height: 20px;
+
+  }
 }
 
 #options img{
   width: 10vh !important;
   height: 10vh !important;
   position: relative;
-  top: -14.3vh;
-  right: 80vh;
+  top: -17vh;
+  right: 215vh;
   cursor:pointer;
 }
 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #options img {
+    width: 7vh !important;
+    height: 7vh !important;
+    margin-top: 11.3vh;
+    right: 220vh;
+  }
+}
 
 /*Header - Nav*/
 nav ul {
@@ -211,7 +289,7 @@ nav ul {
   display: flex;
   justify-content: initial;
   position: relative;
-  top: 3vh;
+  top: 0vh;
   right: 35vh;
   width: 100%;
   padding: 1vh 1vh;
@@ -246,7 +324,33 @@ nav li a {
 
 }
 
+  #x img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 90vh;
 
+  }
+
+
+@media (min-width: 1280px) {
+  #x img {
+    display: none;
+
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #x img {
+    position: relative;
+    margin-left: -78vh;
+
+  }
+}
+
+.up {
+  top: -40vh;
+}
 .row {
   display: row;
   justify-content: center;
@@ -274,6 +378,40 @@ nav li a {
   font-size: 15px;
 }
 
+.optionsMenu {
+  position: relative;
+  right: 2.95vh;
+  margin: 0 0;
+  display: none;
+  width: 30vh;
+}
+
+.rowMenu {
+  display: row;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  width: 15vh;
+  background-color: #aeaeae;
+  border: 1px solid #e0e0e0;
+  margin-left: 3vh;
+}
+
+.rowMenu div {
+  padding: 2vh;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.rowMenu div:hover {
+  background-color: #6f6f6f;
+}
+
+.rowMenu p {
+  position: relative;
+  display: inline;
+  text-align: left;
+  font-size: 15px;
+}
 
 /*Header - logo*/
 
@@ -283,6 +421,7 @@ nav li a {
   position: relative;
   margin-left: 43vh;
   margin-top: -3vh;
+
 }
 
 @media (max-width: 1280px) {
@@ -291,14 +430,52 @@ nav li a {
     width: 20vh;
     position: relative;
     margin-top: 8vh;
-    margin-left: 85vh;
+    margin-left: 220vh;
   }
+
 }
 
 .header {
   height: 20vh;
 }
 
+.browse {
+  text-align: center;
+  position: relative;
+  top: 18vh;
+  background-color: #e29705;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 2vh;
+
+}
+
+.browse h1 {
+  font-size: 3.5vh;
+}
+
+.browseMenu {
+  position: relative;
+  top: 18vh;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  display: none;
+}
+
+.browseMenu li {
+  border: 1px solid #e0e0e0;
+  padding: 2vh 2vh;
+  font-size: 3vh;
+  background-color: #aeaeae;
+
+}
+
+@media (min-width: 480px) {
+  .browse {
+    display: none;
+
+  }
+}
 /*Section - OfferAd*/
 .offerAd {
   width: 100%;
@@ -315,6 +492,15 @@ nav li a {
   width: 100%;
   height: 50vh;
 
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .offerAd {
+    height: 35vh;
+  }
+  .offerAd img {
+    height: 30vh;
+  }
 }
 
 /*Section - NewTrend*/
@@ -353,6 +539,15 @@ nav li a {
   overflow: auto;
 }
 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .newTrend {
+    height: 105vh;
+  }
+  .newTrend img {
+    width: 100%;
+
+  }
+}
 
 /*Section - Ads*/
 
@@ -372,6 +567,18 @@ nav li a {
   height: 35vh;
 
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .ads {
+    height: 20vh;
+  }
+  .boxAds img {
+    width: 15vh;
+    height: 15vh;
+  }
+}
+
+
 /*Section - StyleIdeas*/
 
 .styleIdeas {
@@ -410,6 +617,8 @@ nav li a {
   background-color: white;
 }
 
+
+
 @media (max-width: 1280px) {
   .styleBox {
     width: 30vh;
@@ -433,6 +642,7 @@ nav li a {
 .sliderBox.slick-slide {
   width: 50vh !important;
 }
+
 
 .styleBox h3 {
   font-size: 18px;
@@ -472,11 +682,74 @@ nav li a {
   }
 }
 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .styleIdeas {
+      height: 40vh;
+
+  }
+  .styleBox {
+    width: 10vh;
+    height: 19vh;
+  }
+  .sliderBox.slick-slide {
+    width: 20vh !important;
+  }
+
+  .styleIdeas h2 {
+    text-align: center;
+    position: relative;
+    font-size: 3vh;
+    top: 3vh;
+    color: black;
+
+  }
+
+  .styleIdeas p {
+    text-align: center;
+    position: relative;
+    font-size: 2vh;
+    top: 3vh
+  }
+
+  .styleBox h3 {
+    font-size: 1vh;
+    margin-top: 1vh;
+    margin-left: 1vh;
+  }
+
+  .boxP1 {
+    margin-left: 0.5vh;
+    margin-top: -0.8vh;
+    font-size: 1vh !important;
+  }
+
+
+  .boxP2 {
+    margin-top: -1vh;
+    margin-left: 60%;
+    color: black;
+    font-size: 1vh !important;
+  }
+
+  .boxP3 {
+    margin-top: -2vh;
+    margin-left: 60%;
+    color: black;
+    font-size: 1vh !important;
+  }
+}
 
 .styleBox img {
 
   width: 30vh;
   height: 30vh;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .styleBox img {
+    width: 10vh;
+    height: 10vh;
+  }
 }
 
 #swim {
@@ -485,11 +758,17 @@ nav li a {
 }
 /*Section - Tables*/
 .tables {
-  display: flex;
   justify-content: space-around;
   margin-top: 10vh;
   height: 100vh;
 }
+
+@media (min-width: 480px)  {
+  .tables {
+    display: flex;
+  }
+}
+
 .tables img {
   width: 20vh;
   height: 20vh;
@@ -535,6 +814,17 @@ table p {
   top: -15vh;
   font-size: 20px;
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .tables {
+    height: 310vh;
+  }
+  table {
+    margin-bottom: 10vh;
+    margin-left: 1.5vh;
+  }
+}
+
 /*Section - Categories*/
 
 .categories {
@@ -557,7 +847,7 @@ table p {
 .slider {
   width: 100%;
   margin: 10vh;
-  margin-left: 16.5vh;
+  margin-left: 12.5vh;
   display: flex;
   justify-content: space-around;
   margin-top: 10vh;
@@ -565,10 +855,11 @@ table p {
 }
 
 @media (max-width: 1280px) {
-  .slider {
 
-  }
   #coat {
+    display: none;
+  }
+  #wristband {
     display: none;
   }
 
@@ -576,13 +867,13 @@ table p {
 
 .slick-prev:before {
   position: relative;
-  right: 9vh;
+  right: 6vh;
   font-size: 5vh !important;
 }
 
 .slick-next:before {
   position: relative;
-  right: 27vh;
+  right: 20vh;
   font-size: 5vh !important;
 }
 
@@ -592,11 +883,37 @@ table p {
  margin-top: 3.5vh;
  font-size: 25px;
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+  .categories {
+    height: 40vh;
+    background-color: #f28c00;
+
+  }
+
+  .categories h2 {
+    font-size: 3.5vh;
+  }
+
+  .slider h3 {
+    font-size: 1.5vh;
+    text-align: left;
+  }
+}
+
+
 /*Footer*/
 footer {
-  display: flex;
   justify-content: space-around;
   height: 30vh;
+}
+
+@media (min-width: 480px) {
+  footer {
+    display: flex;
+  }
+
 }
 
 footer h1 {
@@ -653,4 +970,52 @@ footer li {
 
 footer li {
   cursor: pointer;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+
+  footer h1 {
+    text-align: center;
+  }
+
+  footer ul {
+
+  }
+  footer li {
+    text-align: center;
+  }
+
+  .aboutUs {
+    margin-right: 10vh;
+  }
+
+  .menuFooter {
+    margin-right: 6vh;
+  }
+
+  .getInTouch {
+     margin-right: 4vh;
+  }
+
+  .socialMedia {
+    margin-left: 12.5vh;
+
+  }
+
+  .socialMedia div {
+
+
+  }
+
+  .socialMedia img {
+
+  }
+  #facebook {
+    margin-top: 0.45vh;
+  }
+
+  footer li {
+
+  }
 }

@@ -9,23 +9,20 @@ $(document).ready(function () {
 
    });
 
-   $(window).resize(function(){
+   
 
 
 
-         if ($(window).width() > 1280) {
 
-            $('#options').hide()
+  $(window).scroll(function(){
+      $("#x").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
 
-         }
+  $('#options').on('click', () => {
+    $('.optionsMenu').slideToggle();
+    $('#x').find('img').toggleClass('up')
+  })
 
-        if ($(window).width() <= 1280) {
-
-                $('#options').show()
-
-             }
-
-  });
 
   $('.tMenu1').on('mouseover', () => {
     $('.homeMenu').slideDown();
@@ -36,11 +33,11 @@ $(document).ready(function () {
     $('.homeMenu').slideUp();
   })
 
-
   $('.tMenu2').on('mouseover', () => {
-    $('.homeMenu').slideUp();
-  })
+    $('.homeMenu, .skinMenu, .sportsMenu, .giftsMenu').hide();
+    })
 
+        });
 
   $('.tMenu2').on('mouseover', () => {
     $('.shopMenu').slideDown();
@@ -61,6 +58,10 @@ $(document).ready(function () {
   })
 
 
+  $('.tMenu4').on('mouseover', () => {
+    $('.homeMenu, .skinMenu, .shopMenu, .giftsMenu').hide();
+  })
+
   $('.subMenu').on('mouseleave', () => {
     $('.shopMenu').slideUp();
   })
@@ -75,6 +76,10 @@ $(document).ready(function () {
     $('.skinMenu').slideUp();
   })
 
+  $('.tMenu3').on('mouseover', () => {
+    $('.homeMenu, .shopMenu, .sportsMenu, .giftsMenu').hide();
+  });
+
   $('.tMenu5').on('mouseover', () => {
     $('.giftsMenu').slideDown();
 
@@ -83,6 +88,9 @@ $(document).ready(function () {
   $('.subMenu').on('mouseleave', () => {
     $('.giftsMenu').slideUp();
   })
+
+  $('.tMenu5').on('mouseover', () => {
+    $('.homeMenu, .skinMenu, .shopMenu, .sportsMenu').hide();
 
 
 });
