@@ -4,6 +4,8 @@
 <head>
 <title>eCommerceClothing</title>
 <link rel="stylesheet" href="public/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
     </ul>
   </div>
   <div class="logo">
-    <img src="img/logo2.png">
+    <img src="img/logo3.png">
     <div class="searcher">
       <form action="source.html" method="get" id="searchform"/>
         <input type="search" name="search" pattern="[A-Za-z0-9]+">
@@ -33,22 +35,24 @@
         <img src="img/cart.png">
       </li>
     </ul>
+    <div id="options">
+      <img src="img/options.png">
   </div>
-
 
   <nav class="nav">
       <ul id="navBar">
-        <li id="homeMove"><a>Home</a>
+        <li class="tMenu1" id="homeMove"><a>Home</a>
         </li>
-        <li><a>Shop</a>
+        <li class="tMenu2"><a>Shop</a>
         </li>
-        <li><a id="face">Face+Body</a>
+        <li class="tMenu3"><a id="face">Face+Body</a>
         </li>
-        <li><a>Sports</a>
+        <li class="tMenu4"><a>Sports</a>
         </li>
-        <li><a>Gifts</a>
+        <li class="tMenu5"><a>Gifts</a>
         </li>
       </ul>
+
    <div class="menuContainer">
     <div class="homeMenu">
       <ul class="subMenu">
@@ -92,7 +96,7 @@
     </ul>
   </div>
 
-<div class="SkinMenu">
+<div class="skinMenu">
   <ul class="subMenu">
     <li>
       <div class="row">
@@ -133,7 +137,7 @@
   </li>
 </ul>
 </div>
-
+<div class="giftsMenu">
 <ul class="subMenu">
   <li>
     <div class="row">
@@ -158,7 +162,7 @@
 </header>
 
 <section class="header">
-  </section
+</section>
 
 <section class="offerAd">
   <img src= "img/Ad2.jpg">
@@ -195,7 +199,7 @@
     <div class="styleBox">
       <img src="img/blog3.jpg">
       <h3>What is new with Gregori Viancci</h3>
-      <p class="boxP1">13 March 2019</p>
+      <p class="boxP3">13 March 2019</p>
     </div>
     <div class="styleBox">
       <img src="img/blog4.jpg">
@@ -214,23 +218,26 @@
     </tr>
     <tr>
       <td>
+        <img id="stars" src="img/starRating1.png">
         <img src=img/table1.jpg>
-        <h4></h4>
-        <p></p>
+        <h4>Winter Gloves</h4>
+        <p>10.99$</p>
       </td>
     </tr>
     <tr>
       <td>
+          <img id="stars" src="img/starRating3.png">
         <img src=img/table2.jpg>
-        <h4></h4>
-        <p></p>
+        <h4>Foundation</h4>
+        <p>3.99$</p>
       </td>
     </tr>
     <tr>
       <td>
+          <img id="stars" src="img/starRating1.png">
         <img src=img/table3.jpg>
-        <h4></h4>
-        <p></p>
+        <h4>Broken Jeans</h4>
+        <p>37.98$</p>
       </td>
     </tr>
   </table>
@@ -242,23 +249,26 @@
   </tr>
   <tr>
     <td>
+        <img id="stars" src="img/starRating2.png">
       <img src=img/table4.jpg>
-      <h4></h4>
-      <p></p>
+      <h4>Best Seller</h4>
+      <p>14.99$</p>
     </td>
   </tr>
   <tr>
     <td>
+        <img id="stars" src="img/starRating3.png">
       <img src=img/table5.jpg>
-      <h4></h4>
-      <p></p>
+      <h4>Golden Earrings</h4>
+      <p>300.99$</p>
     </td>
   </tr>
   <tr>
     <td>
+        <img id="stars" src="img/starRating2.png">
       <img src=img/table6.jpg>
-      <h4></h4>
-      <p></p>
+      <h4>Sneakers</h4>
+      <p>120.99$</p>
     </td>
   </tr>
   </table>
@@ -270,23 +280,26 @@
   </tr>
   <tr>
     <td>
+      <img id="stars" src="img/starRating2.png">
       <img src=img/table7.jpg>
-      <h4></h4>
-      <p></p>
+      <h4>Silver Watch</h4>
+      <p>180.99$</p>
     </td>
   </tr>
   <tr>
     <td>
+      <img id="stars" src="img/starRating1.png">
       <img src="img/table8.jpg">
-      <h4></h4>
-      <p></p>
+      <h4>Woman Shirt</h4>
+      <p>14.99$</p>
     </td>
   </tr>
   <tr>
     <td>
+      <img id="stars" src="img/starRating3.png">
       <img src="img/table9.jpg">
-      <h4></h4>
-      <p></p>
+      <h4>Full Suit</h4>
+      <p>300.99$</p>
     </td>
   </tr>
   </table>
@@ -296,24 +309,44 @@
 <section class="categories">
   <h2>Shop by Categories</h2>
   <div class="slider">
-
+      <div class="sliderBox">
       <div class="styleBox">
         <img src="img/dress.jpg">
+        <h3>Dresses</h3>
       </div>
+      </div>
+      <div class="sliderBox">
       <div class="styleBox">
-        <img src="img/swim.jpg">
+        <img id="swim" src="img/swim.jpg">
+        <h3>SwimSuits</h3>
       </div>
+      </div>
+      <div class="sliderBox">
       <div class="styleBox">
         <img src="img/shoes.jpg">
+        <h3>Shoes</h3>
       </div>
+      </div>
+      <div class="sliderBox">
       <div class="styleBox">
         <img src="img/makeup.jpg">
+        <h3>Cosmetics</h3>
       </div>
+      </div>
+      <div class="sliderBox">
       <div class="styleBox">
         <img src="img/wristband.jpg">
+        <h3>Accesories</h3>
       </div>
+      </div>
+      <div id="coat" class="sliderBox">
+      <div class="styleBox">
+        <img src="img/coat.jpg">
+        <h3>Coats</h3>
+      </div>
+      </div>
+   </div>
 
-  </div>
 
 </section>
 
@@ -322,6 +355,7 @@
 
 
 <footer>
+  <div class="helpBox">
   <h1>Help and Information</h1>
   <ul class="help">
     <li>Help</li>
@@ -329,40 +363,54 @@
     <li>Return Information</li>
     <li>Premium shipping</li>
   </ul>
+</div>
+  <div class="aboutBox">
   <h1>About Us</h1>
-  <ul class="AboutUs">
+  <ul class="aboutUs">
     <li>About lush</li>
     <li>Careers</li>
     <li>Corporate Responsability</li>
     <li>Investors Site</li>
   </ul>
+</div>
+<div class="menuFooterBox">
   <h1>Menu</h1>
-  <ul class="menu">
+  <ul class="menuFooter">
     <li>Contact</li>
     <li>Lastest News</li>
     <li>FAQ</li>
     <li>Blog</li>
   </ul>
+</div>
+<div class="getInTouchBox">
   <h1>Get in Touch</h1>
   <ul class="getInTouch">
     <li>Direction</li>
     <li>Phone</li>
     <li>Email</li>
   </ul>
-
   <div class="socialMedia">
-    <img src="img/facebook.png" width="30px" height="30px">
-    <img src="img/instagram.png" width="30px" height="30px">
-    <img src="img/twitter.png" width="30px" height="30px">
-   </div>
-
-  <div class="language">
-    <img>
-    <p>Hello, we belive you are in UK</p>
+    <div>
+    <img id="facebook" src="img/facebook.png" width="25px" height="25px">
   </div>
+    <div>
+    <img src="img/instagram.png" width="40px" height="40px">
+  </div>
+  <div>
+    <img src="img/twitter.png" width="40px" height="40px">
+  </div>
+   </div>
+</div>
+
+
 
 </footer>
-
-
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+  <script type="text/javascript" src="public/main.js"></script>
 
 </html>
