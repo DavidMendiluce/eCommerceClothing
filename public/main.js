@@ -8,11 +8,10 @@ $(document).ready(function () {
     autoplay: false,
 
    });
-
-   
-
-
-
+  $('.browse').on('click', () => {
+    $('.browseMenu').slideToggle();
+    $('.arrow').toggleClass('rotateRight')
+  })
 
   $(window).scroll(function(){
       $("#x").css("opacity", 1 - $(window).scrollTop() / 250);
